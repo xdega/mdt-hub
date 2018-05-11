@@ -2,13 +2,9 @@
 
 ### Build Initial Rails Project
 If you have just cloned this repository, you are almost there!
-The following command will get you started with a new Rails project that uses MySQL as the backend database:
+The following command will get you started with a new Rails project that uses Postgre SQL as the backend database:
 
-`docker-compose run web rails new -s -d mysql .`
-
-Alternatively, you can roll with the default SQLite database driver (not reccomended in most cases):
-
-`docker-compose run web rails new -s .`
+`docker-compose run web rails new -s -d postgresql .`
 
 ### Run Docker Environment
 `docker-compose up -d`
