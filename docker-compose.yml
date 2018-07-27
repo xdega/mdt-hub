@@ -5,9 +5,10 @@ services:
     ports:
       - "3000:3000"
       - "1080:1080"
+    stdin_open: true
+    tty: true
     volumes:
-      - .:/var/www/html
-    command: dockerup
+      - .:/var/www/rails
     depends_on:
       - db
   db:
