@@ -1,17 +1,17 @@
 !!! 5
 %html
   %head
-  %title MDT - Hub
+  %title DT HUB (&alpha;)
 
   = csrf_meta_tags
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
   = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   %body
-    %header
-      = render 'header'
-      = render 'nav'
+    = render 'header'
+    = render 'nav'
+    
     %main
       = yield
-    %footer
-      = render 'footer'
+  
+    = render 'footer'
