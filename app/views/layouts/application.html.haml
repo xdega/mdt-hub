@@ -8,4 +8,10 @@
   = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   %body
-    = yield
+    %header
+      = render 'header'
+      = render 'nav'
+    %main
+      = yield
+    %footer
+      = render 'footer'

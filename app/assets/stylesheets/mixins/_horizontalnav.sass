@@ -1,0 +1,17 @@
+@mixin horizontalnav($link_width, $link_color, $padding)
+  ul
+    padding: $padding
+    li
+      float: left
+      padding-left: $padding
+      padding-right: $padding
+      a
+        display: block
+        text-decoration: none
+        color: $link_color
+        width: $link_width
+        transition: color 1s
+
+        &:hover
+          color: darken($link_color, 25%)
+          transition: color 1s
