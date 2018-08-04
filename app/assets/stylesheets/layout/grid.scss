@@ -5,6 +5,7 @@
     }
 
     .grid {
+        margin: 0;
         display: grid;
         grid-template-columns: 2fr 1fr 2fr;
         grid-template-rows: $header-height 1fr $footer-height;
@@ -26,8 +27,9 @@
     }
 
     main {
+      width: 90%;
       grid-area: main;
-      justify-self: left;
+      justify-self: center;
     }
 
     footer {
